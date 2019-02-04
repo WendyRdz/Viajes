@@ -1,0 +1,17 @@
+<h1 class="animated fadeIn fast">Our Trips</h1>
+<hr>
+<div class="card-columns">
+    <div class="card animated fadeIn fast" *ngFor="let datos of services; let i = index">
+        <img [src]="datos.img" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{ datos.name}}</h5>
+            <p class="card-text">{{datos.description}}.</p>
+            <p class="card-text"><small class="text-muted">{{datos.dates}}</small></p>
+            <button (click)="seeIndividual(i)" type="button" class="btn btn-outline-primary btn-block"> See more...
+            </button>
+
+            <!-- <a [routerLink]="['/individual',i]" class="btn btn-outline-primary btn-block ">See more...</a> -->
+
+        </div>
+    </div>
+</div>
