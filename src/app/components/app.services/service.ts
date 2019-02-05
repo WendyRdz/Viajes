@@ -60,7 +60,7 @@ export class ServicesService {
         description: 'The forests of Mexico are true wonders in which you can find a lot of flora and fauna. Monarch butterflies have chosen to travel thousands of miles to the forests of the State of Mexico and the El Capulín Sanctuary is an option to live with them. Visit the sanctuary of the monarch butterfly of Capulín and live a unique experience walking among the thousands of monarch butterflies that hibernate, grow and breed among the trees of Oyamel. You can take the walk with the help of a guide who will explain everything you need to admire them. As you walk through the forest you will see hundreds of them fluttering around you or forming huge orange and yellow cones in the treetops. Move to know that they fly more than 4000 miles to get there.',
         img: 'assets/img/michoacan.jpg',
         dates: 'Date to visit: All year',
-        transportation: 'Date to visit: March - may'
+        transportation: 'Bus'
       },
       {
         name: 'Oaxaca',
@@ -81,7 +81,7 @@ export class ServicesService {
     ];
 
     constructor() {
-        console.log('servicio listo');
+        //console.log('service');
     }
 
     // hacer publico nuestro arreglo de datos para acceder a el

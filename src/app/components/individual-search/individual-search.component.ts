@@ -8,7 +8,7 @@ import {ServicesService} from '../app.services/service';
 
 })
 export class IndividualSearchComponent {
-  individual: any = {};
+  individualSearch: any = {};
   constructor(private activatedRoute: ActivatedRoute,
     private _services: ServicesService
     ) {
@@ -16,7 +16,7 @@ export class IndividualSearchComponent {
 
       this.activatedRoute.params.subscribe ( params => {
         console.log( params['id']);
-        this.individual = this._services.getIndividual( params['id'] );
+        this.individualSearch = this._services.getIndividual( params['id'] );
       });
     }
   }

@@ -10,7 +10,6 @@ export class IndividualComponent  {
 
  individual: any = {};
 
-
   constructor(private activatedRoute: ActivatedRoute,
     private _services: ServicesService
     ) {

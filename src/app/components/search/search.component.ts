@@ -5,6 +5,7 @@ import {Router} from '@angular/router';
 import { Servicess } from '../app.services/service';
 
 
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -23,8 +24,8 @@ export class SearchComponent implements OnInit {
 
   ngOnInit() {
     this.services = this._services.getdata();
-   this.activatedRoute.params.subscribe( params => {
-    console.log(params ['termino']);
+    this.activatedRoute.params.subscribe( params => {
+    //console.log(params ['termino']);
     this.info = this._services.searchInformation( params ['termino'] );
     console.log(this.info);
   });
