@@ -4,6 +4,8 @@ import {AboutComponent} from './components/about/about.component';
 import {ServicesComponent} from './components/services/services.component';
 import {ContactComponent} from './components/contact/contact.component';
 import {IndividualComponent} from './components/individual/individual.component';
+import { SearchComponent } from './components/search/search.component';
+
 
 
 
@@ -13,6 +15,7 @@ const APP_ROUTES: Routes =  [//arreglo de rutas
     { path: 'services', component: ServicesComponent},
     { path: 'contact', component: ContactComponent},
     { path: 'individual/:id', component: IndividualComponent},
+    { path: 'search/:termino', component: SearchComponent},
 
     //{ path: 'buscar/:termino', component: BuscadorComponent}, // este es el uscador 
     { path: '**', pathMatch: 'full', redirectTo: 'home'},

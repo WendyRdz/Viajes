@@ -17,6 +17,9 @@ import { from } from 'rxjs';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { IndividualComponent } from './components/individual/individual.component';
+import { TruncatePipe } from './Pipes/truncate.pipes';
+import { SearchComponent } from './components/search/search.component';
+import { IndividualSearchComponent } from './components/individual-search/individual-search.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { IndividualComponent } from './components/individual/individual.componen
     ServicesComponent,
     ContactComponent,
     FooterComponent,
-    IndividualComponent
+    IndividualComponent,
+    TruncatePipe,
+    SearchComponent,
+    IndividualSearchComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,7 @@
+.jumbotron {
+    background-color: rgb(233, 231, 233);
+}
+
 div.contenedor {
     max-width: 1100px;
     margin: 0 auto;
@@ -70,3 +74,6 @@ article a {
         padding-right: 15px;
     }
 }
+
+
+/**/

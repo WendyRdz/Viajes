@@ -1,13 +1,23 @@
-<h1 class="animated fadeIn fast">Our Trips</h1>
+<h1 class="animated fadeIn fast">Our Trips <small>{{ termino }}</small></h1>
 <hr>
+
+
+<div class="row animated fadeIn fast" *ngIf="info.length == 0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            There is not results with {{termino}}
+        </div>
+    </div>
+</div>
+
 <div class="card-columns">
-    <div class="card animated fadeIn fast" *ngFor="let datos of services; let i = index">
+    <div class="card animated fadeIn fast" *ngFor="let datos of info; let i = index">
         <img [src]="datos.img" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
             <h5 class="card-title">{{ datos.name}}</h5>
             <p class="card-text">{{datos.description | truncate: 160}}.</p>
             <p class="card-text"><small class="text-muted">{{datos.dates}}</small></p>
-            <button (click)="seeIndividual(i)" type="button" class="btn btn-outline-primary btn-block"> See more...
+            <button (click)="SeeInfo(i)" type="button" class="btn btn-outline-primary btn-block"> See more...
             </button>
 
             <!-- <a [routerLink]="['/individual',i]" class="btn btn-outline-primary btn-block ">See more...</a> -->
